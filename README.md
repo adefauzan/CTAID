@@ -1,27 +1,31 @@
 # Colonial Tomb Archive ID
-The primary objective is to transform static, historical records into a dynamic, open-access spatial database. This allows researchers and the public to visualize the evolution of Tionghoa funerary landscapes, many of which are currently threatened by rapid urbanization and land-use changes.
+Project Description
+This repository serves as a decentralized collaborative hub dedicated to the spatial detection and digital documentation of colonial-era Chinese tombs in Indonesia. By leveraging Public Domain maps and archival records from the KITLV (Leiden University) collection, this project integrates historical cartography into modern Geographic Information Systems (GIS). Our mission is to transform static archival data into dynamic geospatial insights while fostering an open research community.
 
-📍 GIS-Centric Collaboration
-Using GitHub as a technical infrastructure, this project facilitates a "crowdsourced" approach to heritage science. Our workflow focuses on:
+📍 Commitment to FAIR Principles
+To ensure the sustainability of digital heritage research, this repository is managed strictly according to FAIR Data standards:
 
-Georeferencing & Digitization: Converting high-resolution Public Domain maps and colonial-era city plans from the KITLV collection into georeferenced raster layers.
+Findable: All datasets are enriched with standardized metadata and indexed via GitHub to ensure they are discoverable by the global research community.
 
-Vector Data Creation: Extracting specific tomb locations and cemetery boundaries to create standardized GeoJSON, KML, and Shapefiles.
+Accessible: We utilize open-access source materials from the KITLV public domain, ensuring that data remains free and available without restrictive licensing barriers.
 
-Spatiotemporal Tracking: Comparing historical cartography with modern satellite imagery to monitor the preservation status of these sites over time.
+Interoperable: Spatial data is processed into open formats—such as GeoJSON, CSV, and KML—allowing for seamless integration across various platforms including QGIS, ArcGIS, and web-mapping tools.
 
-Version Control for Heritage: Every update to a site’s coordinates or metadata is tracked via Git commits, ensuring a transparent and reproducible record of our mapping progress.
+Reusable: Datasets are provided with clear documentation and provenance, enabling future researchers to build upon this work for historical, sociological, or urban planning studies.
 
-📂 Utilizing KITLV Public Domain Data
-This project exclusively utilizes KITLV materials that have entered the Public Domain, ensuring that our outputs remain part of the global Open Data movement. Key sources include:
+🛡️ Data Ethics & Heritage Safeguarding
+In alignment with digital archaeology ethics, this project adheres to a policy of not disclosing highly specific or high-precision location data for vulnerable sites. To prevent potential looting or vandalism, our public datasets focus on macro-scale distribution patterns and spatial analysis rather than providing precise navigational coordinates for sensitive cultural assets.
 
-Historical Cartography: 19th and 20th-century maps of Batavia, Semarang, and Surabaya.
+📂 KITLV Open Data Utilization
+The repository manages assets derived from public domain materials, including:
 
-Topographic Prints: Visual records providing architectural context for "Omega-shaped" and traditional Hokkien tombs.
+Historical Cartography: 19th and 20th-century city plans and cemetery (Sentiong) layouts.
 
-Archival Metadata: Machine-readable descriptions used to categorize tombs by era and prominence.
+Topographic Records: Lithographs and prints providing architectural and landscape contexts.
 
-🛠️ Contributing to Open Heritage
-We invite GIS specialists, historians, and digital humanists to contribute. Whether through verifying coordinates, georeferencing new maps, or cleaning metadata, your input helps preserve a crucial part of Indonesia’s multicultural history.
+Open Metadata: Bibliographic records used for the chronological categorization of heritage sites.
 
-“Preserving the past through open collaboration and spatial precision.”
+🛠️ Collaborative Contribution
+We invite GIS analysts, historians, and open-data advocates to contribute. Collaboration is focused on georeferencing historical maps, standardizing data attributes, and historical verification through transparent Pull Requests.
+
+“Advancing heritage preservation through open collaboration and responsible data stewardship.”
