@@ -1,31 +1,31 @@
 # Colonial Tomb Archive ID
+PThis version maintains the 350-word count while specifically addressing your requirement: shifting the focus away from "high accuracy" and instead emphasizing the ethical risks and the necessity of using the data wisely.
+
+🏛️ Spatial Documentation of Colonial Chinese Tombs (KITLV Public Domain Data)
 Project Description
-This repository serves as a decentralized collaborative hub dedicated to the spatial detection and digital documentation of colonial-era Chinese tombs in Indonesia. By leveraging Public Domain maps and archival records from the KITLV (Leiden University) collection, this project integrates historical cartography into modern Geographic Information Systems (GIS). Our mission is to transform static archival data into dynamic geospatial insights while fostering an open research community.
+This repository serves as an open collaborative hub for the spatial identification and documentation of colonial-era Chinese cemeteries across Indonesia. Utilizing Public Domain maps and archival materials from the KITLV (Leiden University) collection, the project integrates historical cartography into a Geographic Information System (GIS) framework. The goal is to provide a broad spatial overview of Tionghoa funerary heritage to support historical research and urban planning.
 
-📍 Commitment to FAIR Principles
-To ensure the sustainability of digital heritage research, this repository is managed strictly according to FAIR Data standards:
+📍 Data Precision and Ethical Responsibility
+This project provides a spatial representation of historical sites based on archival evidence. However, we explicitly state that this repository is not intended for high-precision navigation or survey-grade accuracy. Our mapping focuses on general distribution patterns and historical site locations as they appeared in colonial records.
 
-Findable: All datasets are enriched with standardized metadata and indexed via GitHub to ensure they are discoverable by the global research community.
+Users must acknowledge the inherent risks associated with cultural heritage data. To prevent potential misuse, such as looting, vandalism, or unauthorized site disturbance, we emphasize that:
 
-Accessible: We utilize open-access source materials from the KITLV public domain, ensuring that data remains free and available without restrictive licensing barriers.
+Responsible Use: Data must be used wisely and exclusively for educational, conservation, or research purposes.
 
-Interoperable: Spatial data is processed into open formats—such as GeoJSON, CSV, and KML—allowing for seamless integration across various platforms including QGIS, ArcGIS, and web-mapping tools.
+Spatial Sensitivity: We provide generalized location markers rather than high-precision coordinates for vulnerable sites to safeguard their physical integrity.
 
-Reusable: Datasets are provided with clear documentation and provenance, enabling future researchers to build upon this work for historical, sociological, or urban planning studies.
+Community Integrity: Any collaborative contributions must respect the sanctity and cultural sensitivity of these burial grounds.
 
-🛡️ Data Ethics & Heritage Safeguarding
-In alignment with digital archaeology ethics, this project adheres to a policy of not disclosing highly specific or high-precision location data for vulnerable sites. To prevent potential looting or vandalism, our public datasets focus on macro-scale distribution patterns and spatial analysis rather than providing precise navigational coordinates for sensitive cultural assets.
+📂 Commitment to FAIR Principles
+To ensure the sustainability of digital heritage, this project adheres to FAIR Data standards:
 
-📂 KITLV Open Data Utilization
-The repository manages assets derived from public domain materials, including:
+Findable & Accessible: Using KITLV’s open-access repository as the primary source of truth.
 
-Historical Cartography: 19th and 20th-century city plans and cemetery (Sentiong) layouts.
+Interoperable: Providing spatial data in open-source formats like GeoJSON and CSV.
 
-Topographic Records: Lithographs and prints providing architectural and landscape contexts.
+Reusable: Encouraging a collaborative environment where data can be improved and analyzed by the global research community under ethical guidelines.
 
-Open Metadata: Bibliographic records used for the chronological categorization of heritage sites.
+🛠️ Collaborative Participation
+We invite historians, GIS enthusiasts, and heritage advocates to assist in georeferencing public domain maps and standardizing metadata. By participating, you agree to handle all spatial information with the utmost care and to prioritize the preservation of the physical sites over data granularity.
 
-🛠️ Collaborative Contribution
-We invite GIS analysts, historians, and open-data advocates to contribute. Collaboration is focused on georeferencing historical maps, standardizing data attributes, and historical verification through transparent Pull Requests.
-
-“Advancing heritage preservation through open collaboration and responsible data stewardship.”
+“Mapping the past, respecting the present: Collaborative heritage data managed with ethical foresight.”
