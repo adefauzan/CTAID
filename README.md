@@ -1,5 +1,5 @@
 🏛️#Colonial Tomb Archive ID
-Collaborative GIS Hub for Colonial Chinese Tombs Indonesia (KITLV Open Data)
+Collaborative GIS Hub for Colonial Chinese Tombs (KITLV Open Data)
 ⚠️ ETHICAL DISCLAIMER: This project is dedicated to historical research and cultural preservation. Users are strictly urged to use this spatial data wisely and ethically. High-precision data is intentionally avoided to prevent misuse that could threaten the physical integrity or sanctity of these heritage sites.
 
 🌟 Project Vision
@@ -46,4 +46,6 @@ Georeferencing: Helping to align Public Domain maps to their historical location
 Refining Metadata: Improving the descriptions and historical context of mapped points.
 
 ⚖️ License & Ethical Note
-All generated datasets are licensed under CC BY-NC 4.0. By using this data, you agree to prioritize the safety and sanctity of the physical sites over data granularity
+All generated datasets are licensed under CC BY-NC 4.0. By using this data, you agree to prioritize the safety and sanctity of the physical sites over data granularity.
+
+Langkah selanjutnya: Anda cukup menyalin teks di atas ke dalam file bernama README.md di repositori GitHub Anda. Apakah Anda ingin saya membantu membuatkan daftar folder yang rapi untuk menyimpan data GIS Anda?
