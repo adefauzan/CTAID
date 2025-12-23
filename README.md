@@ -1,5 +1,4 @@
 # Colonial Tomb Archive ID
-PThis version maintains the 350-word count while specifically addressing your requirement: shifting the focus away from "high accuracy" and instead emphasizing the ethical risks and the necessity of using the data wisely.
 
 🏛️ Spatial Documentation of Colonial Chinese Tombs (KITLV Public Domain Data)
 Project Description
