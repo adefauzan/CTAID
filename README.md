@@ -1,4 +1,5 @@
-🏛️#Colonial Tomb Archive ID
+🏛️*Colonial Tomb Archive ID*
+
 Collaborative GIS Hub for Colonial Chinese Tombs (KITLV Open Data)
 ⚠️ ETHICAL DISCLAIMER: This project is dedicated to historical research and cultural preservation. Users are strictly urged to use this spatial data wisely and ethically. High-precision data is intentionally avoided to prevent misuse that could threaten the physical integrity or sanctity of these heritage sites.
 
