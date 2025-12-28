@@ -1,52 +1,121 @@
-🏛️*Colonial Tomb Archive ID*
+# Digitasi Peta Kuna
 
-Collaborative GIS Hub for Colonial Chinese Tombs (KITLV Open Data)
-⚠️ ETHICAL DISCLAIMER: This project is dedicated to historical research and cultural preservation. Users are strictly urged to use this spatial data wisely and ethically. High-precision data is intentionally avoided to prevent misuse that could threaten the physical integrity or sanctity of these heritage sites.
+Mengubah Sejarah Kertas menjadi Data Terbuka untuk Semua
 
-🌟 Project Vision
-This repository is a decentralized collaborative hub designed to detect and document the spatial footprint of colonial-era Chinese cemeteries in Indonesia. By bridging the gap between KITLV Public Domain archives and modern GIS technology, we transform forgotten maps into active tools for cultural preservation.
 
-📍 The GIS Workflow
-We leverage GitHub as an infrastructure to manage spatial data under a collaborative "Open Science" framework:
+## 📜 Tentang Proyek Ini
 
-🗺️ Archival Integration: Rectifying public domain maps from the KITLV collection into modern coordinate systems.
+Proyek Digitasi Peta Kuna adalah sebuah inisiatif komunitas yang bertujuan untuk mendigitalkan (georeferencing dan ekstraksi fitur) peta-peta kuno dari sumber terbuka dan non-komersial.
 
-📊 Spatial Standardization: Converting unstructured archival metadata into machine-readable GeoJSON, KML, and CSV formats.
+Tujuan kami adalah menciptakan sebuah platform di mana siapa saja dapat berkontribusi untuk melestarikan warisan kartografi dan membuatnya dapat diakses secara bebas bagi sejarawan, peneliti, pendidik, dan masyarakat umum. Data yang dihasilkan dari proyek ini sepenuhnya milik publik dan dapat digunakan untuk tujuan apa pun.
 
-🕰️ Spatiotemporal Analysis: Tracking the evolution of cemetery landscapes against modern urban expansion.
+## ✨ Prinsip Utama
 
-🛡️ Responsible Accuracy: Prioritizing distribution patterns over high-precision coordinates to safeguard vulnerable sites from looting or vandalism.
+Kami berpegang pada beberapa prinsip utama:
 
-💎 The FAIR Data Commitment
-This project is built on the FAIR Principles to ensure the longevity of digital heritage:
+1. **Keterbukaan (Openness):** Seluruh data hasil digitasi bersifat terbuka. Proses kerja dan diskusi dilakukan secara transparan.
+2. **Kolaborasi (Collaboration):** Proyek ini hidup dari kontribusi banyak orang. Kami mendorong kerja sama dan saling membantu.
+3. **Non-Komersial:** Kami hanya menggunakan peta sumber yang bebas dari batasan hak cipta komersial dan ditujukan untuk kepentingan publik.
+4. **Akurasi dan Kualitas:** Kami berupaya untuk menghasilkan data geospasial yang seakurat mungkin sesuai dengan peta sumbernya.
+5. **Penghargaan pada Sumber:** Setiap data yang dihasilkan wajib menyertakan metadata yang jelas mengenai sumber peta aslinya.
 
-FINDABLE: Metadata is indexed with permanent KITLV Handle URLs for easy discovery.
+## 🚀 Cara Berkontribusi
 
-ACCESSIBLE: Built entirely on Public Domain and Open Access source materials from Leiden University.
+Setiap orang dipersilakan untuk berkontribusi\! Berikut adalah langkah-langkah dan aturan umum untuk menjadi kontributor:
 
-INTEROPERABLE: Data is provided in open formats compatible with QGIS, ArcGIS, and Web-GIS.
+### 1\. Sumber Peta (Aturan Wajib)
 
-REUSABLE: Documented workflows allow for scientific peer review and further research expansion.
+Sebelum memulai, pastikan peta yang akan Anda digitasi memenuhi kriteria berikut:
 
-📂 Source Material (KITLV Public Domain)
-We exclusively utilize open-access assets to ensure transparency:
+  ***Berasal dari Sumber Terbuka:** Peta harus berasal dari arsip publik, perpustakaan universitas, museum, atau repositori online yang secara eksplisit menyatakan kontennya bebas digunakan ulang. Contoh: Arsip Nasional, Perpustakaan Nasional, Wikimedia Commons, Internet Archive.
 
-Historical Cartography: 19th-century city plans and Sentiong (cemetery) layouts.
+  ***Non-Komersial & Bebas Hak Cipta:** Pastikan tidak ada batasan hak cipta yang melarang proses digitasi dan distribusi ulang. **Kontributor bertanggung jawab penuh untuk memverifikasi status lisensi peta sumber.** Jika ragu, jangan gunakan peta tersebut.
 
-Topographic Prints: Visual records used for site context and architectural styles.
+  ***Memiliki Resolusi Cukup:** Peta harus memiliki resolusi yang memadai agar detail seperti teks, jalan, dan batas wilayah dapat terlihat jelas untuk proses digitasi.
 
-Archival Metadata: Standardized records of interred figures and historical eras.
+### 2\. Proses Digitasi
 
-🤝 How to Contribute
-Heritage preservation is a collective responsibility. You can contribute by:
+Proses kontribusi secara umum terdiri dari:
 
-Validating Data: Cross-checking archival sites with non-sensitive satellite imagery.
+1. **Georeferencing:** Menyelaraskan citra peta kuno dengan sistem koordinat geografis modern (misalnya, menggunakan QGIS, ArcGIS, atau platform online).
+2. **Ekstraksi Fitur (Digitasi):** Menggambar ulang fitur-fitur penting dari peta kuno menjadi data vektor (titik, garis, poligon). Contoh fitur yang bisa diekstraksi:
 
-Georeferencing: Helping to align Public Domain maps to their historical locations.
+   * Jalan lama dan jalur kereta api
+   * Batas administratif (desa, distrik, provinsi)
+   * Nama-nama tempat (toponimi)
+   * Sungai dan garis pantai
+   * Lokasi bangunan bersejarah atau fasilitas umum
+3. **Pengisian Metadata:** Setiap data yang diserahkan **wajib** menyertakan informasi (metadata) yang lengkap.
 
-Refining Metadata: Improving the descriptions and historical context of mapped points.
+### 3\. Standar Teknis
 
-⚖️ License & Ethical Note
-All generated datasets are licensed under CC BY-NC 4.0. By using this data, you agree to prioritize the safety and sanctity of the physical sites over data granularity.
+Untuk menjaga konsistensi dan kualitas data, harap ikuti standar berikut:
 
-Langkah selanjutnya: Anda cukup menyalin teks di atas ke dalam file bernama README.md di repositori GitHub Anda. Apakah Anda ingin saya membantu membuatkan daftar folder yang rapi untuk menyimpan data GIS Anda?
+  ***Format Data:**
+
+    * Data vektor (hasil ekstraksi fitur) harus dalam format**GeoJSON (`.geojson`)**.
+
+    * Peta yang sudah ter-georeferensi (jika ada) harus dalam format**GeoTIFF (`.tif`)**.
+
+  ***Sistem Proyeksi Koordinat (CRS):** Semua data harus menggunakan **WGS 84 (EPSG:4326)**. Ini adalah standar global yang paling umum digunakan.
+
+  ***Struktur Folder dan Penamaan File:**
+
+    * Buat folder baru untuk setiap peta dengan format:`[TahunPeta]_[NamaSingkatLokasi]` (Contoh: `1885_Batavia_Centrum`).
+
+    * Nama file harus deskriptif:`[TahunPeta]_[NamaPeta]_[JenisFitur].geojson` (Contoh: `1885_Batavia_Residency_Jalan.geojson`).
+
+  ***Atribut Metadata (Wajib di dalam file atau deskripsi):**
+
+    *`judul_peta`: Judul asli dari peta.
+
+    *`tahun_terbit`: Tahun peta dibuat atau diterbitkan.
+
+    *`sumber_peta`: URL atau nama institusi tempat peta diperoleh.
+
+    *`pembuat_peta`: Nama kartografer atau penerbit asli (jika diketahui).
+
+    *`nama_kontributor`: Nama atau username Anda.
+
+### 4\. Alur Kerja Pengiriman Kontribusi (via GitHub)
+
+1. **Fork** repositori ini.
+2. Buat **Branch** baru untuk pekerjaan Anda (`git checkout -b fitur/digitasi-peta-batavia-1885`).
+3. Tambahkan file hasil digitasi Anda ke dalam folder yang sesuai.
+4. **Commit** perubahan Anda dengan pesan yang jelas.
+5. **Push** ke branch Anda di fork Anda.
+6. Buka **Pull Request (PR)** ke branch `main` repositori ini.
+7. Pada deskripsi Pull Request, jelaskan secara singkat peta apa yang Anda digitasi, sumbernya, dan fitur apa saja yang diekstraksi. Tim akan meninjau kontribusi Anda.
+
+## ⚖️ Aturan Perilaku Komunitas
+
+Kami ingin komunitas ini menjadi tempat yang aman dan ramah bagi semua orang.
+
+  ***Bersikap Hormat dan Sopan:** Perlakukan semua orang dengan hormat. Kritik yang membangun dipersilakan, tetapi serangan pribadi tidak akan ditoleransi.
+
+  ***Kolaboratif:** Proyek ini adalah upaya bersama. Terbukalah untuk menerima masukan dan bekerja sama dengan kontributor lain.
+
+  ***Fokus pada Kualitas:** Berikan yang terbaik dalam setiap kontribusi. Jika menemukan kesalahan pada data yang sudah ada, silakan buka *Issue* untuk mendiskusikannya.
+
+  ***Nol Toleransi untuk Pelecehan:** Pelecehan dalam bentuk apa pun tidak akan ditoleransi.
+
+## 📄 Lisensi dan Penggunaan Data
+
+  ***Peta Sumber:** Seperti yang disebutkan di atas, kontributor bertanggung jawab untuk memastikan peta sumber bebas dari batasan hak cipta yang menghalangi proyek ini.
+
+  ***Data Hasil Digitasi:** Seluruh data hasil digitasi (file `.geojson`, `.tif`, dll.) yang ada di repositori ini dirilis di bawah lisensi **Creative Commons Zero (CC0) / Domain Publik**.
+
+Ini berarti:
+
+> **Siapa pun dapat menyalin, memodifikasi, mendistribusikan, dan menggunakan data ini untuk tujuan apa pun (termasuk komersial) tanpa perlu meminta izin dan tanpa atribusi.**
+
+Kami memilih lisensi ini untuk memastikan data dapat dimanfaatkan seluas-luasnya oleh masyarakat tanpa hambatan apa pun.
+
+## 💬 Hubungi Kami & Diskusi
+
+Punya pertanyaan, ide, atau butuh bantuan?
+
+* Untuk diskusi terkait data atau masalah teknis, silakan buka **"Issue"** di repositori GitHub ini.
+* Untuk diskusi umum komunitas, Anda bisa bergabung dengan [Platform Diskusi Komunitas, misal: Server Discord atau Grup Telegram - *Tautkan di sini*].
+
+Terima kasih atas minat dan kontribusi Anda dalam melestarikan sejarah untuk generasi mendatang\!
