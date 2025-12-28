@@ -105,6 +105,54 @@
             border: 2px solid #000;
             box-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
         }
+
+        /* --- KUSTOMISASI LAYER CONTROL (MENU PEMILIHAN DATA) --- */
+        /* Mengubah kotak putih default menjadi hitam transparan glassmorphism */
+        .leaflet-control-layers {
+            background: rgba(10, 10, 10, 0.85) !important;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(251, 191, 36, 0.3) !important;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
+            color: #fff !important;
+            border-radius: 0px !important;
+        }
+
+        /* Style saat menu dibuka */
+        .leaflet-control-layers-expanded {
+            padding: 12px !important;
+            font-family: 'Space Grotesk', sans-serif;
+            min-width: 180px;
+        }
+
+        /* Garis pemisah antar section (jika ada basemap & overlay) */
+        .leaflet-control-layers-separator {
+            border-top: 1px solid rgba(251, 191, 36, 0.3) !important;
+            margin: 8px 0 !important;
+        }
+
+        /* Styling teks label */
+        .leaflet-control-layers label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Efek hover pada item list */
+        .leaflet-control-layers label:hover span {
+            color: var(--theme-yellow);
+            text-shadow: 0 0 8px rgba(251, 191, 36, 0.5);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        /* Custom Checkbox/Radio (Opsional - agar browser merender input lebih gelap) */
+        .leaflet-control-layers input[type="checkbox"], 
+        .leaflet-control-layers input[type="radio"] {
+            accent-color: var(--theme-yellow);
+            margin-right: 8px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body class="text-white relative">
@@ -118,28 +166,28 @@
         <!-- Judul -->
         <div class="glass-panel p-6 pointer-events-auto transition-all hover:border-yellow-400">
             <div class="flex items-center justify-between mb-2">
-                <span class="text-xs font-bold text-amber-400 tracking-widest uppercase border border-amber-400 px-2 py-0.5 rounded-sm">Archive ID: 2024</span>
+                <span class="text-xs font-bold text-amber-400 tracking-widest uppercase border border-amber-400 px-2 py-0.5 rounded-sm">2025</span>
                 <div class="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></div>
             </div>
             <h1 class="text-3xl font-bold text-white leading-tight">
-                Peta Sebaran <span class="text-amber-400">Makam Kolonial</span>
+                Peta Sebaran <span class="text-amber-400">Makam Tionghoa dari Era Kolonial</span>
             </h1>
             <p class="text-gray-400 text-sm mt-3 leading-relaxed">
-                Visualisasi data geospasial situs pemakaman Tionghoa era kolonial. Data bersumber dari arsip digital KITLV.
+                Platform Terbuka Kolaboratif untuk Pendeteksian Makam Tionghoa Kuno Bersumber Peta Digital KITLV
             </p>
         </div>
 
         <!-- Kotak Info Statistik -->
         <div class="glass-panel p-5 pointer-events-auto">
-            <h3 class="text-amber-400 font-bold uppercase text-xs mb-3 tracking-wider">Statistik Arsip</h3>
+            <h3 class="text-amber-400 font-bold uppercase text-xs mb-3 tracking-wider">Total Digitasi</h3>
             <div class="grid grid-cols-2 gap-4">
                 <div>
                     <!-- ID ini akan diisi otomatis oleh script.js -->
                     <div id="stat-count" class="text-2xl font-bold">-</div>
-                    <div class="text-xs text-gray-500">Situs Terdata</div>
+                    <div class="text-xs text-gray-500">Hasil Digitasi</div>
                 </div>
                 <div>
-                    <div class="text-2xl font-bold">Main</div>
+                    <div class="text-2xl font-bold">KITLV</div>
                     <div class="text-xs text-gray-500">Sumber Data</div>
                 </div>
             </div>
@@ -156,7 +204,7 @@
     <div class="absolute bottom-8 right-4 z-[1000] flex flex-col gap-2 pointer-events-none">
         <div class="glass-panel p-3 pointer-events-auto">
             <div class="text-[10px] text-amber-400 uppercase tracking-widest text-right">
-                System Status: Online<br>
+                Coordinates<br>
                 Lat: <span id="lat-display">-6.2000</span><br>
                 Lng: <span id="lng-display">106.8166</span>
             </div>
